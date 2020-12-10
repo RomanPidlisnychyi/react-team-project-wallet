@@ -1,0 +1,42 @@
+.buttonOpenModal {
+  position: fixed;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #e56100;
+  width: 54px;
+  height: 54px;
+  right: 50%;
+  bottom: 5px;
+  transform: translateX(50%);
+}
+
+.buttonOpenModal:hover {
+  cursor: pointer;
+}
+
+.buttonOpenModal:focus {
+  outline: none;
+}
+
+.buttonOverlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42px;
+  background-color: rgba(40, 64, 96, 0.651);
+  box-shadow: 0px -10px 30px 0px rgba(119, 119, 119, 0.1);
+}
+
+@media (min-width: 768px) {
+  .buttonOpenModal {
+    right: 45px;
+    bottom: 45px;
+  }
+
+  .buttonOverlay {
+    display: none;
+  }
+}

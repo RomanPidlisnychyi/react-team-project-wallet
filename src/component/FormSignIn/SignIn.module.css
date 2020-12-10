@@ -1,0 +1,49 @@
+@value label, authenticationError, authenticationLogoContainer, authenticationLogo, authenticationLogoName, authenticationForm, authenticationEmail, authenticationPassword, inputValidation, authenticationButton, link, financeApp, iPhoneIMG, iPhoneContainer from "../../assets/styles/Authentication.module.css";
+
+.linkSignUp {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  margin: 0 auto;
+  margin-top: -10px;
+  font-size: 12px;
+  width: 50px;
+  border-bottom: 1px solid rgb(166, 177, 181);
+}
+.modal{
+  width: 100vw;
+}
+.formContainer{
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@media (min-width: 768px) {
+  .modal {
+    background-image: url(../../images/Authentication/bg-tablet-login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .formContainer {
+    height: 390px;
+    width: 550px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 1280px) {
+  .modal {
+    background-image: url('../../images/Authentication/bg-desktop-login.png');
+  }
+   .formContainer{
+    left: 70%;
+    box-shadow: 0px 0px 19px 8px rgba(0, 0, 0, 0.36);
+  } 
+}

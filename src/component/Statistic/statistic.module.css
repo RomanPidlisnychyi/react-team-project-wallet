@@ -1,0 +1,264 @@
+.container {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.select__section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 17px;
+  width: 320px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+.statistic_main_title {
+  display: none;
+}
+
+.select__input {
+  width: 130px;
+  height: 35px;
+}
+.statistic {
+  display: flex;
+  flex-direction: column;
+}
+.statistic_container {
+  width: 320px;
+  margin: 0 auto;
+}
+.statistic__title {
+  padding: 20px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f3f6f6;
+}
+.chart_error{
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+.costs_title,
+.costs_total,
+.income_total,
+.statistic__total,
+.statistic__category {
+  font-size: 15px;
+  font-weight: 900;
+}
+.statistic__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border-bottom: 2px solid #b9c9d4;
+}
+
+.list__item {
+  display: flex;
+  padding: 0px 20px;
+  height: 42px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f3f6f6;
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+.label_before {
+  width: 15px;
+  height: 15px;
+  margin-right: 14px;
+}
+
+.category_section {
+  display: flex;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.costs {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.costs_title {
+  margin: 0;
+}
+.costs_section {
+  padding: 15px 20px;
+}
+
+.costs_total {
+  color: #ff8022;
+}
+
+.income_total {
+  color: #415b7d;
+}
+
+.costs_desc {
+  display: none;
+}
+
+.error__title {
+  margin: 0 auto;
+  width: 320px;
+  padding: 0px 20px;
+  display: block;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .statistics {
+    width: 768px;
+    margin: 0 auto;
+    background-image: url(./../../images/bg.png);
+  }
+  .container {
+    width: 768px;
+    padding: 0px 10px;
+  }
+  .statistic_main_title {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #284060;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .select__section {
+    display: flex;
+    justify-content: center;
+    padding: 34px 0px 20px;
+    margin-bottom: 0;
+  }
+
+  .select__input {
+    width: 170px;
+    margin-right: 10px;
+  }
+  .chart {
+    padding: 85px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(220, 224, 223, 0.75);
+  }
+  .statistic_container {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .statistic__title {
+    display: none;
+  }
+  .statistic__list_error{
+    height: auto;
+  }
+  .statistic__list {
+    height: 220px;
+    flex-wrap: wrap;
+  }
+
+  .costs_title,
+  .costs_total,
+  .income_total {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .list__item {
+    width: 304px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .costs {
+    justify-content: flex-end;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding: 7px 0px;
+  }
+
+  .costs_title {
+    margin: 0px 33px 0px 0px;
+    text-align: start;
+  }
+
+  .error__title {
+    margin: 0 auto;
+    width: 768px;
+    padding: 0px 20px;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .statistics {
+    width: 855px;
+    background: none;
+    box-shadow: 0px 0px 20px 0px rgba(220, 224, 223, 0.75);
+  }
+  .desctop_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 65px;
+    background-color: #ffffff;
+  }
+  .container {
+    width: 422px;
+    padding: 0;
+  }
+
+  .statistic_main_title {
+    text-transform: none;
+    padding: 21px 0px;
+  }
+  .chart {
+    width: 430px;
+    box-shadow: none;
+    margin: 0;
+  }
+  .statistic_container {
+    width: 360px;
+  }
+
+  .statistic__title {
+    display: flex;
+    padding: 25px 35px;
+  }
+
+  .statistic__list {
+    height: auto;
+  }
+  .list__item {
+    width: 100%;
+    margin-right: 0px;
+    padding: 0px 22px 0px 35px;
+  }
+
+  .costs_section {
+    padding: 10px 15px 30px 35px;
+  }
+  .costs {
+    justify-content: space-between;
+    text-transform: none;
+  }
+
+  .costs_desc {
+    display: inline-block;
+  }
+}

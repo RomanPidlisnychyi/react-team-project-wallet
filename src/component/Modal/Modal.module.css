@@ -1,0 +1,81 @@
+.enter {
+  transform: translateX(-100%);
+}
+
+.enterActive {
+  transform: translateX(0);
+  transition: transform 250ms linear;
+}
+
+.exit {
+  transform: translateX(0);
+}
+
+.exitActive {
+  transform: translateX(-100%);
+  transition: transform 250ms linear;
+}
+
+.overlay {
+  position: fixed;
+  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal {
+  position: absolute;
+  height: calc(100% - 40px);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffffe;
+  border-radius: 5px;
+  box-shadow: 1px 1px 40px rgba(1, 1, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .appear {
+    transform: scale(0.1);
+  }
+
+  .appearActive {
+    transform: scale(1);
+    transition: transform 250ms linear;
+  }
+
+  .enter {
+    transform: scale(0.1);
+  }
+
+  .enterActive {
+    transform: scale(1);
+    transition: transform 250ms linear;
+  }
+
+  .exit {
+    transform: scale(1);
+  }
+
+  .exitActive {
+    transform: scale(0.1);
+    transition: transform 250ms linear;
+  }
+
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 480px;
+    align-items: start;
+    padding-top: 15px;
+  }
+}

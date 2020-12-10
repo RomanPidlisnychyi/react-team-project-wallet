@@ -1,0 +1,33 @@
+.financeMobSection {
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.currencySection {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .financeMobSection {
+    width: 738px;
+    margin: 0px auto;
+    margin-bottom: 200px;
+  }
+
+  .currencySection {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .financeMobSection {
+    width: 856px;
+    margin: 0px 26px 0px 26px;
+    background-color: #f2eaf0;
+  }
+
+  .currencySection {
+    display: none;
+  }
+}
